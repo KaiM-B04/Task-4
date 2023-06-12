@@ -1,0 +1,116 @@
+.topnav {
+  background-color: rgba(130, 79, 28, 0.884);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 5px 20px black;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5px;
+}
+
+.home:hover {
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 40px;
+  margin-top: 18px;
+  margin-left: 20px;
+  margin-right: 120px;
+  animation: rotation 7s infinite linear;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(359deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}
+
+.logo:hover {
+  cursor: pointer;
+  animation: rotation 0.5s infinite linear;
+}
+
+.author {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: -5px;
+  margin-left: 10px;
+  opacity: 0.7;
+}
+
+.author:hover {
+  opacity: 0.9;
+}
+
+.search {
+  background: url(images/Vector_search_icon.svg) rgb(230, 236, 244) no-repeat;
+  background-position: 190px 7px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  font-style: italic;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 200px;
+  outline: none;
+  padding-left: 10px;
+}
+
+.search:active {
+  border: none;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 25px;
+}
+
+.share,
+.about,
+.dropdown {
+  background-color: rgb(230, 236, 244);
+  color: rgb(33, 29, 27);
+  height: 25px;
+  font-weight: bold;
+  border-width: none;
+  border-style: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.about,
+.share {
+  margin-right: 5px;
+}
+
+.dropdown {
+  margin-right: 10px;
+}
+.share:hover,
+.about:hover,
+.dropdown:hover {
+  background-color: rgb(33, 29, 27);
+  color: rgb(230, 236, 244);
+  cursor: pointer;
+}
+
+.share:active,
+.about:active,
+.dropdown:active {
+  opacity: 0.7;
+}
